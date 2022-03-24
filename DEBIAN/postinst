@@ -5,11 +5,20 @@
 #####################################################################################
 #####################################################################################
 #####################################################################################
-rm /usr/share/fonts/*.ttf 
-rm /usr/share/fonts/*.TTF 
-rm /usr/share/fonts/*.otf 
-rm /usr/share/fonts/*.OTF 
+#rm /usr/share/fonts/*.ttf 
+#rm /usr/share/fonts/*.TTF 
+#rm /usr/share/fonts/*.otf 
+#rm /usr/share/fonts/*.OTF 
+if [ -d /usr/share/fonts/calibri-fonts ] ; then
 rm -r /usr/share/fonts/calibri-fonts
+fi
+
+if [ -d /usr/share/fonts/wps-fonts ] ; then
 rm -r /usr/share/fonts/wps-fonts
+fi
+
+if [ -d /usr/share/fonts/wps-office ] ; then
 rm -r /usr/share/fonts/wps-office
+fi
+
 chmod 777 -R /usr/share/fonts/afad-fonts
